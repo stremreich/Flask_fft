@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Recorder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Audio Recorder</h1>
+    <button id="recordButton">Record</button>
+    <div id="waveform"></div>
+    <div id="fft"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Recorderjs/0.1.0/recorder.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
